@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Products map
+{% endblock %}
+
+{% block body %}
+        <div>
+            {% for product in products %}
+                {% if product.sales > 0 %}
+                    <br>
+                    ------------------------------------------
+                    <p>Товар: {{ product.name }}</p>
+                    <p>ID: {{ product.id }}</p>
+                    <p>Продаж: {{ product.sales }}</p>
+                    <br>
+
+                    ------------------------------------------
+                {% endif %}
+            {% endfor %}
+        </div>
+
+{% endblock %}

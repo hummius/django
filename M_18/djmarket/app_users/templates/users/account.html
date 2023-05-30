@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "Profile" %}
+{% endblock %}
+{% block body %}
+
+    {% if request.user.is_authenticated %}
+        <h1>{% trans "Welcome to the site," %} {{ request.user.username }}</h1>
+        <p>{% trans "Your balance" %}: {{ request.user.userprofile.balance }}</p>
+        <p>{% trans "Your status" %}: {{ request.user.userprofile.status }}</p>
+        <p>{% trans "Amount of your purchases" %}: {{ request.user.userprofile.spenging_amount }}</p>
+        <br>
+        <br>
+        <a href="{% url 'deposit' %}">{% trans "Top up balance" %}</a>
+        <br>
+        <br>
+        <a href="{% url 'logout' %}">{% trans "Logout" %}</a>
+        <br>
+        <br>
+        <a href="{% url 'orders-history' %}">{% trans "Orders history" %}</a>
+        <br>
+        <h3>{% trans "Promotions" %}:</h3>
+        {% for promotion in promotions %}
+            <p>{{ promotion.id }}</p>
+            <p>{{ promotion.promotion }}</p>
+            <p>{{ promotion.product.name }}</p>
+            <br>
+        {% endfor %}
+        <h3>{% trans "Offers" %}:</h3>
+        {% for offer in offers %}
+            <p>{{ offer.id }}</p>
+            <p>{{ offer.offer }}</p>
+            <br>
+        {% endfor %}
+
+    {% else %}
+        {% trans "You are not authorized on our site." %}
+        <a href="{% url 'login' %}">{% trans "Enter" %}</a>
+    {% endif %}
+
+{% endblock %}

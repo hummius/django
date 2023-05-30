@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+  {% trans "Product" %} #{{ product.pk }}
+{% endblock %}
+
+{% block body %}
+  <h1>{% trans "Product" %} <strong>{{ product.name }}</strong></h1>
+  <div>
+    <div>{% trans "Description" %}: <em>{{ product.description }}</em></div>
+    <div>{% trans "Price" %}: {{ product.price }}</div>
+    <div>{% trans "Archived" %}: {{ product.archived }}</div>
+    {% if positions %}
+    {% trans "In stock" %}:
+      {% for position in positions %}
+        <p>{% trans "Market"}: {{ position.market.name }}</p>
+        <form method="POST" action="/marketplace/to-cart/">
+          {% csrf_token %}
+          {% trans "Quantity" %}: <input type="number" name="amount" max="{{ position.amount }}" autofocus required>
+          <input type="hidden" value="{{ position.market.id }}" name="market_id">
+          <input type="hidden" value="{{ position.id }}" name="item_id">
+          <input type="hidden" value="{{ product.id }}" name="product_id">
+          <input type="submit" value="{% trans 'Add to cart' %}">
+        </form>
+        <p>{% trans "Quantity" %}: {{ position.amount }}</p>
+      {% endfor %}
+    {% else %}
+      {% trans "Not available" %}
+    {% endif %}
+  </div>
+
+  <div>
+    <a href="{% url 'app_market:products-map' %}">{% trans "Back to products list" %}</a>
+  </div>
+{% endblock %}

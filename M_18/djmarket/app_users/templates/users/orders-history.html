@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "Orders history" %}
+{% endblock %}
+{% load cache %}
+{% cache 500 footer %}
+    {% block body %}
+
+        {% if request.user.is_authenticated %}
+            <h1>{% trans "Orders history" %}</h1>
+            {% for order in orders %}
+                <p>{% trans "Order" %}: {{ order.id }}</p>
+                <p>{% trans "Creation date" %}: {{ order.created_at }}</p>
+                <p>{% trans "Order price" %}: {{ order.order_price }}</p>
+                <br>
+                <br>
+            {% endfor %}
+            <br>
+            <br>
+            <a href="{% url 'account' %}">{% trans "Back to profile" %}</a>
+
+        {% else %}
+            {% trans "You are not authorized on our site." %}
+            <a href="{% url 'login' %}">{% trans "Enter" %}</a>
+        {% endif %}
+    {% endblock %}
+{% endcache %}

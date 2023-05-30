@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "Image reduction" %}
+{% endblock %}
+{% block body %}
+
+    <h2></h2>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">{% trans "Reduce the image" %}</button>
+    </form>

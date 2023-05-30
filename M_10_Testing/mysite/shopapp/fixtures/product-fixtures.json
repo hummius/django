@@ -1,0 +1,290 @@
+[
+  {
+    "model": "shopapp.product",
+    "pk": 1,
+    "fields": {
+      "name": "Laptop",
+      "description": "",
+      "price": "1999.00",
+      "discount": 0,
+      "created_at": "2023-03-17T21:29:15.407Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 2,
+    "fields": {
+      "name": "Desktop",
+      "description": "Unde quod fugiat ipsum, nisi eaque deserunt ipsum veniam. Quaerat adipisci doloribus at exercitationem modi optio veniam explicabo, veniam minima minus exercitationem repellendus, cum pariatur culpa ullam dolorum repudiandae amet ut voluptas, amet nulla excepturi corrupti dicta dolorem eius suscipit similique debitis aut eum, blanditiis veniam neque nulla veritatis accusamus dolor esse eius ea? Cum quaerat quisquam nam repellendus incidunt neque pariatur quis explicabo, adipisci ipsa officiis dignissimos ducimus asperiores voluptates eligendi porro suscipit corrupti distinctio, assumenda vel voluptatum tenetur omnis quaerat provident minus odit voluptatibus praesentium architecto? Odit excepturi doloremque dolorum tempore?",
+      "price": "2599.00",
+      "discount": 10,
+      "created_at": "2023-03-17T21:29:15.407Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 3,
+    "fields": {
+      "name": "Smartphone",
+      "description": "",
+      "price": "987.00",
+      "discount": 25,
+      "created_at": "2023-03-17T21:29:15.407Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 4,
+    "fields": {
+      "name": "Tablet",
+      "description": "",
+      "price": "1234.00",
+      "discount": 0,
+      "created_at": "2023-03-26T13:54:06.007Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 5,
+    "fields": {
+      "name": "Phone2",
+      "description": "some description",
+      "price": "1235.00",
+      "discount": 10,
+      "created_at": "2023-03-26T14:14:41.735Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 7,
+    "fields": {
+      "name": "Tablet 2",
+      "description": "tablet 2",
+      "price": "1500.00",
+      "discount": 15,
+      "created_at": "2023-03-26T14:59:44.677Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 8,
+    "fields": {
+      "name": "Telescope",
+      "description": "csd",
+      "price": "2000.00",
+      "discount": 10,
+      "created_at": "2023-04-08T15:02:58.802Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 9,
+    "fields": {
+      "name": "Telescope 2",
+      "description": "sad",
+      "price": "1500.00",
+      "discount": 5,
+      "created_at": "2023-04-08T15:09:32.844Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 10,
+    "fields": {
+      "name": "Some",
+      "description": "",
+      "price": "4564.00",
+      "discount": 0,
+      "created_at": "2023-04-08T15:21:25.300Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 11,
+    "fields": {
+      "name": "Vape",
+      "description": "Vape",
+      "price": "10.00",
+      "discount": 0,
+      "created_at": "2023-04-08T15:44:17.098Z",
+      "archived": true
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 12,
+    "fields": {
+      "name": "Vape",
+      "description": "Vape",
+      "price": "10.00",
+      "discount": 0,
+      "created_at": "2023-04-08T15:44:51.165Z",
+      "archived": true
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 13,
+    "fields": {
+      "name": "",
+      "description": "",
+      "price": "0.00",
+      "discount": 0,
+      "created_at": "2023-04-08T15:44:51.181Z",
+      "archived": true
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 14,
+    "fields": {
+      "name": "Vape",
+      "description": "dsa",
+      "price": "1000.00",
+      "discount": 0,
+      "created_at": "2023-04-08T15:45:59.949Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 15,
+    "fields": {
+      "name": "",
+      "description": "",
+      "price": "0.00",
+      "discount": 0,
+      "created_at": "2023-04-08T15:45:59.976Z",
+      "archived": true
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 16,
+    "fields": {
+      "name": "sdfsf",
+      "description": "",
+      "price": "342.00",
+      "discount": 0,
+      "created_at": "2023-04-08T15:48:17.026Z",
+      "archived": true
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 17,
+    "fields": {
+      "name": "",
+      "description": "",
+      "price": "0.00",
+      "discount": 0,
+      "created_at": "2023-04-08T15:48:17.040Z",
+      "archived": true
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 18,
+    "fields": {
+      "name": "dsfsd",
+      "description": "",
+      "price": "342.00",
+      "discount": 0,
+      "created_at": "2023-04-08T15:54:23.620Z",
+      "archived": true
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 19,
+    "fields": {
+      "name": "sdfsf",
+      "description": "",
+      "price": "999.00",
+      "discount": 0,
+      "created_at": "2023-04-08T16:06:59.667Z",
+      "archived": true
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 20,
+    "fields": {
+      "name": "sdfsf",
+      "description": "",
+      "price": "999.00",
+      "discount": 0,
+      "created_at": "2023-04-08T16:07:40.416Z",
+      "archived": true
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 21,
+    "fields": {
+      "name": "aaa",
+      "description": "",
+      "price": "111.00",
+      "discount": 0,
+      "created_at": "2023-04-08T16:09:31.110Z",
+      "archived": true
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 22,
+    "fields": {
+      "name": "aaa",
+      "description": "",
+      "price": "979.00",
+      "discount": 0,
+      "created_at": "2023-04-08T16:31:44.212Z",
+      "archived": true
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 23,
+    "fields": {
+      "name": "kkk",
+      "description": "",
+      "price": "789.00",
+      "discount": 0,
+      "created_at": "2023-04-08T16:33:46.883Z",
+      "archived": true
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 24,
+    "fields": {
+      "name": "ooo",
+      "description": "",
+      "price": "99.00",
+      "discount": 0,
+      "created_at": "2023-04-08T16:40:24.264Z",
+      "archived": false
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 25,
+    "fields": {
+      "name": "DDD",
+      "description": "fsdfs",
+      "price": "232.00",
+      "discount": 0,
+      "created_at": "2023-04-08T17:52:13.409Z",
+      "archived": false
+    }
+  }
+]

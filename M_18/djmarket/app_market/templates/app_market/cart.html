@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+  {% trans "Your shopping cart" %}
+{% endblock %}
+
+{% block body %}
+    <h1>{% trans "Your shopping cart" %}</h1>
+    <table class="cart">
+        {% for item in cart %}
+            {% with product=item.product %}
+                <br>
+                -------------------------------------
+                <br>
+                <p>{% trans "Product" %}: {{ product.name }}</p>
+                <p>{% trans "Quantity" %}: {{ item.quantity }}</p>
+                <p class="num">{% trans "Price" %}: {{ item.price }}</p>
+                <p class="num">{% trans "Sum" %}: {{ item.total_price }}</p>
+                {% with market=item.market %}
+                    <p>{% trans "From market" %}: {{ item.market_id }}</p>
+                {% endwith %}
+                <br>
+                <p><a href="{% url 'app_market:cart-remove' product.id %}">{% trans "Remove" %}</a></p>
+                <br>
+                _____________________________________
+            {% endwith %}
+        {% endfor %}
+        <br>
+        <p>{% trans "Full cost of item" %}: {{ full_price }}</p>
+        <br>
+
+        <form method="POST" action="/marketplace/make-order/">
+          {% csrf_token %}
+            <input type="submit" value="{% trans 'Make order' %}">
+          <input type="hidden" value="{{ full_price }}" name="full_price">
+        </form>
+        <br>
+        <br>
+         <div>
+            <a href="{% url 'app_market:products-map' %}">{% trans "Back to product list" %}</a>
+         </div>
+
+        <br>
+    </table>
+
+{% endblock %}

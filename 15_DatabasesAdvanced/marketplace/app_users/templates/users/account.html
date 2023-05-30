@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Profile
+{% endblock %}
+{% block body %}
+
+    {% if request.user.is_authenticated %}
+        <h1>Добро пожаловать на сайт, {{ request.user.username }}</h1>
+        <p>Ваш баланс: {{ request.user.userprofile.balance }}</p>
+        <p>Ваш статус: {{ request.user.userprofile.status }}</p>
+        <p>Сумма ваших покупок: {{ request.user.userprofile.spenging_amount }}</p>
+        <br>
+        <br>
+        <a href="{% url 'deposit' %}">Пополнить баланс</a>
+        <br>
+        <br>
+        <a href="{% url 'logout' %}">Выйти из профиля</a>
+
+    {% else %}
+        You are not authorized on our site.
+        <a href="{% url 'login' %}">Enter</a>
+    {% endif %}
+
+{% endblock %}

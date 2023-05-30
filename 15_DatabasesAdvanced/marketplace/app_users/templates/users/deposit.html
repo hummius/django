@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Top up balance
+{% endblock %}
+{% block body %}
+
+    {% if request.user.is_authenticated %}
+        <h1>Пополнение баланса</h1>
+        <p>Ваш баланс: {{ request.user.userprofile.balance }}</p>
+        <br>
+        <br>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Sign up</button>
+        </form>
+
+    {% else %}
+        You are not authorized on our site.
+        <a href="{% url 'login' %}">Enter</a>
+    {% endif %}
+
+{% endblock %}

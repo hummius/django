@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "Products map" %}
+{% endblock %}
+
+{% block body %}
+        <div>
+            {% for product in products %}
+                {% if product.sales > 0 %}
+                    <br>
+                    ------------------------------------------
+                    <p>{% trans "Product" %}: {{ product.name }}</p>
+                    <p>ID: {{ product.id }}</p>
+                    <p>{% trans "Sold" %}: {{ product.sales }}</p>
+                    <br>
+
+                    ------------------------------------------
+                {% endif %}
+            {% endfor %}
+        </div>
+
+{% endblock %}

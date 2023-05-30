@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Posts information
+{% endblock %}
+
+{% block body %}
+    {% if posts_list %}
+        <div>
+            {% for post in posts_list %}
+            <div>
+                <p>Название поста: {{ post.title }}</p>
+                <p>ID: {{ post.id }}</p>
+                <p>Публикация: {{ post.is_published }}</p>
+                <p>Создание: {{ post.created_at }}</p>
+                <p>Блог: {{ post.blog.name }}</p>
+                <p>Авторы: {% for author in post.authors.all %}
+                                {{ author.name }},
+                            {% endfor %}</p>
+                <p>Модератор: {{ post.moderator }}</p>
+                <br>
+            {% endfor %}
+            </div>
+        </div>
+    {% else %}
+        Нет информации
+    {% endif %}
+
+{% endblock %}

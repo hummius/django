@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Product #{{ product.pk }}
+{% endblock %}
+
+{% block body %}
+  <h1>Продукт <strong>{{ product.name }}</strong></h1>
+  <div>
+    <div>Описание: <em>{{ product.description }}</em></div>
+    <div>Цена: {{ product.price }}</div>
+    <div>Archived: {{ product.archived }}</div>
+    {% if positions %}
+      В наличии:
+      {% for position in positions %}
+        <p>Магазин: {{ position.market.name }}</p>
+        <form method="POST" action="/marketplace/to-cart/">
+          {% csrf_token %}
+          Кол-во: <input type="number" name="amount" max="{{ position.amount }}" autofocus required>
+          <input type="hidden" value="{{ position.market.id }}" name="market_id">
+          <input type="hidden" value="{{ position.id }}" name="item_id">
+          <input type="hidden" value="{{ product.id }}" name="product_id">
+          <input type="submit" value="Добавить в корзину">
+        </form>
+        <p>Кол-во: {{ position.amount }}</p>
+      {% endfor %}
+    {% else %}
+      Нет в наличии
+    {% endif %}
+  </div>
+
+  <div>
+    <a href="{% url 'app_market:products-map' %}">Back to products list</a>
+  </div>
+{% endblock %}

@@ -1,0 +1,209 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-01 09:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: app_goods/apps.py:7 app_goods/models.py:10
+msgid "goods"
+msgstr ""
+
+#: app_goods/models.py:6
+msgid "code"
+msgstr ""
+
+#: app_goods/models.py:7
+msgid "price"
+msgstr ""
+
+#: app_goods/models.py:11
+msgid "good"
+msgstr ""
+
+#: app_pages/views.py:12
+#, python-format
+msgid "Hello there! Today is %(date)s %(time)s"
+msgstr ""
+
+#: templates/employment/vacancy.html:5
+msgid "Vacancies"
+msgstr ""
+
+#: templates/employment/vacancy.html:9
+msgid "Jobs"
+msgstr ""
+
+#: templates/goods/items_list.html:5 templates/goods/items_list.html:9
+msgid "Items list"
+msgstr ""
+
+#: templates/goods/items_list.html:15
+msgid "Vendor code"
+msgstr ""
+
+#: templates/goods/items_list.html:16
+msgid "Price"
+msgstr ""
+
+#: templates/goods/items_list.html:29
+msgid "No items"
+msgstr ""
+
+#: templates/goods/upload_price_file.html:5
+msgid "Files with prices uploading"
+msgstr ""
+
+#: templates/goods/upload_price_file.html:13
+#: templates/media/file_form_upload.html:13 templates/media/upload_file.html:13
+msgid "Upload file"
+msgstr ""
+
+#: templates/greetings.html:5
+msgid "What time is it?"
+msgstr ""
+
+#: templates/main.html:5 templates/welcome.html:5
+msgid "Main page"
+msgstr ""
+
+#: templates/main.html:10 templates/users/account.html:10
+msgid "Welcome to the site"
+msgstr ""
+
+#: templates/main.html:12
+msgid "Birthday"
+msgstr ""
+
+#: templates/main.html:13
+msgid "City"
+msgstr ""
+
+#: templates/main.html:15 templates/users/account.html:19
+msgid "You are not authorized on our site."
+msgstr ""
+
+#: templates/main.html:16
+msgid "Enter"
+msgstr ""
+
+#: templates/main.html:18
+msgid "I am home page"
+msgstr ""
+
+#: templates/media/file_form_upload.html:5
+msgid "File upload"
+msgstr ""
+
+#: templates/media/resize_image.html:5
+msgid "Image reduction"
+msgstr ""
+
+#: templates/media/resize_image.html:13
+msgid "Reduce the image"
+msgstr ""
+
+#: templates/media/upload_file.html:5
+msgid "File uploading"
+msgstr ""
+
+#: templates/media/upload_files.html:5
+msgid "Files uploading"
+msgstr ""
+
+#: templates/media/upload_files.html:13
+msgid "Upload files"
+msgstr ""
+
+#: templates/translation_example.html:5
+msgid "Our translation page title."
+msgstr "Der Titel unserer Übersetzungsseite."
+
+#: templates/translation_example.html:9
+msgid "Translated text."
+msgstr "Übersetzter Text."
+
+#: templates/translation_example.html:13
+msgid "Language code"
+msgstr ""
+
+#: templates/translation_example.html:14
+msgid "Name of language"
+msgstr ""
+
+#: templates/translation_example.html:15
+msgid "Name in English"
+msgstr ""
+
+#: templates/translation_example.html:16
+msgid "Bi-directional"
+msgstr ""
+
+#: templates/translation_example.html:17
+msgid "Name in the active language"
+msgstr ""
+
+#: templates/translation_example.html:23
+msgid "Welcome to our page"
+msgstr ""
+
+#: templates/users/account.html:5
+msgid "Profile"
+msgstr ""
+
+#: templates/users/account.html:16
+msgid "Avatar not loaded"
+msgstr ""
+
+#: templates/users/edit_account.html:5
+msgid "Change profile"
+msgstr ""
+
+#: templates/users/edit_account.html:12
+msgid "Update"
+msgstr ""
+
+#: templates/users/login.html:5
+msgid "Page"
+msgstr ""
+
+#: templates/users/login.html:9
+msgid "Login page"
+msgstr ""
+
+#: templates/users/logout.html:10
+msgid "You have successfully logged out of your account!"
+msgstr ""
+
+#: templates/users/register.html:5
+msgid "Registration"
+msgstr ""
+
+#: templates/users/register.html:9
+msgid "Registraion"
+msgstr ""
+
+#: templates/users/restore_password.html:5
+msgid "Password recovery"
+msgstr ""
+
+#: templates/users/restore_password.html:12
+msgid "Restore password"
+msgstr ""
+
+#: templates/welcome.html:9
+msgid "Welcome!"
+msgstr ""

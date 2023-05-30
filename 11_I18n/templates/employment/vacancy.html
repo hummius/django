@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "Vacancies" %}
+{% endblock %}
+{% block body %}
+
+   <h1>{% trans "Jobs" %}</h1>
+
+    {% if vacancy_list %}
+    <ul>
+
+      {% for vacancy in vacancy_list %}
+      <li>
+        <a href="#">{{ vacancy.title }}</a>
+      </li>
+      {% endfor %}
+
+    </ul>
+    {% else %}
+      <p>{% trans No vacancies. %}</p>
+    {% endif %}
+
+{% endblock %}
+

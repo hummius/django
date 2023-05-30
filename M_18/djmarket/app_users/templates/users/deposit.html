@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "Top up balance" %}
+{% endblock %}
+{% block body %}
+
+    {% if request.user.is_authenticated %}
+        <h1>{% trans "Balance replenish" %}</h1>
+        <p>{% trans "Your balance" %}: {{ request.user.userprofile.balance }}</p>
+        <br>
+        <br>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">{% trans "Sign up" %}</button>
+        </form>
+
+    {% else %}
+        {% trans "You are not authorized on our site." %}
+        <a href="{% url 'login' %}">{% trans "Enter" %}</a>
+    {% endif %}
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "Main page" %}
+{% endblock %}
+{% block body %}
+
+    {% if request.user.is_authenticated %}
+        {% trans "Welcome to the site", {{ request.user.first_name }} %}
+
+        <p>{% trans "Birthday" %}: {{ request.user.profile.date_of_birth }}</p>
+        <p>{% trans "City" %}: {{ request.user.profile.city }}</p>
+    {% else %}
+        {% trans "You are not authorized on our site." %}
+        <a href="{% url 'login' %}">{% trans "Enter" %}</a>
+    {% endif %}
+    <h2>{% trans "I am home page" %}</h2>
+
+{% endblock %}
+

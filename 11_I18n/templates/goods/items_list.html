@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+    {% trans "Items list" %}
+{% endblock %}
+{% block body %}
+
+    <h1>{% trans "Items list" %}</h1>
+
+    {% if items_list %}
+        <table border="1">
+            <tbody>
+            <tr>
+                <td>{% trans "Vendor code" %}</td>
+                <td>{% trans "Price" %}</td>
+            </tr>
+            {% for item in items_list %}
+                <tr>
+                    <td>{{ item.code }}</td>
+                    <td>{{ item.price }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+
+        </table>
+
+    {% else %}
+        <p>{% trans "No items" %}</p>
+    {% endif %}
+
+{% endblock %}
+

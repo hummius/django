@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазины</title>
+</head>
+{% load cache %}
+{% cache 500 footer %}
+<body>
+    {% for item in shops.all %}
+        <li>
+            <p> {{item.name }}</p>
+        </li>
+    {% endfor %}
+</body>
+{% endcache %}
+</html>

@@ -1,0 +1,335 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-09 18:02+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: app_market/models.py:12 app_market/models.py:13 app_market/models.py:27
+msgid "product"
+msgstr "товар"
+
+#: app_market/models.py:15 app_shops/models.py:6
+msgid "name"
+msgstr "имя"
+
+#: app_market/models.py:16
+msgid "description"
+msgstr "описание"
+
+#: app_market/models.py:17
+msgid "price"
+msgstr "цена"
+
+#: app_market/models.py:18 app_market/models.py:35 app_market/models.py:51
+msgid "created"
+msgstr "создано"
+
+#: app_market/models.py:19
+msgid "sales"
+msgstr "продажи"
+
+#: app_market/models.py:26
+msgid "promotion"
+msgstr "акция"
+
+#: app_market/models.py:31
+msgid "offer"
+msgstr "предложение"
+
+#: app_market/models.py:36
+msgid "buyer"
+msgstr "покупатель"
+
+#: app_market/models.py:37
+msgid "items"
+msgstr "наименования"
+
+#: app_market/models.py:38
+msgid "order price"
+msgstr "сумма заказа"
+
+#: app_market/models.py:41
+msgid "orders"
+msgstr "заказы"
+
+#: app_market/models.py:42
+msgid "order"
+msgstr "заказ"
+
+#: app_market/models.py:47
+msgid "markets"
+msgstr "магазины"
+
+#: app_market/models.py:48
+msgid "market"
+msgstr "магазин"
+
+#: app_market/models.py:50
+msgid "market name"
+msgstr "название магазина"
+
+#: app_market/models.py:60
+msgid "products item"
+msgstr "наименования товара"
+
+#: app_market/models.py:61
+msgid "product item"
+msgstr "наименование товара"
+
+#: app_market/models.py:63
+msgid "product name"
+msgstr "наименование товара"
+
+#: app_market/models.py:65
+msgid "in market"
+msgstr "в магазине"
+
+#: app_market/templates/app_market/cart.html:5
+#: app_market/templates/app_market/cart.html:9
+msgid "Your shopping cart"
+msgstr "Ваша карзина покупок"
+
+#: app_market/templates/app_market/cart.html:16
+#: app_market/templates/app_market/product.html:5
+#: app_market/templates/app_market/product.html:9
+#: app_market/templates/app_market/products-map.html:14
+#: app_market/templates/app_market/sales-statistic.html:14
+msgid "Product"
+msgstr "Товар"
+
+#: app_market/templates/app_market/cart.html:17
+#: app_market/templates/app_market/product.html:20
+#: app_market/templates/app_market/product.html:26
+#: app_market/templates/app_market/products-map.html:21
+msgid "Quantity"
+msgstr "Кол-во"
+
+#: app_market/templates/app_market/cart.html:18
+#: app_market/templates/app_market/product.html:12
+msgid "Price"
+msgstr "Цена"
+
+#: app_market/templates/app_market/cart.html:19
+msgid "Sum"
+msgstr "Сумма"
+
+#: app_market/templates/app_market/cart.html:21
+msgid "From market"
+msgstr "Из магазина"
+
+#: app_market/templates/app_market/cart.html:24
+msgid "Remove"
+msgstr "Удалить"
+
+#: app_market/templates/app_market/cart.html:30
+msgid "Full cost of item"
+msgstr "Итоговая стоимость"
+
+#: app_market/templates/app_market/cart.html:35
+msgid "Make order"
+msgstr "Сделать заказ"
+
+#: app_market/templates/app_market/cart.html:41
+msgid "Back to product list"
+msgstr "Вернуться к списку товаров"
+
+#: app_market/templates/app_market/product.html:11
+msgid "Description"
+msgstr "Описание"
+
+#: app_market/templates/app_market/product.html:13
+msgid "Archived"
+msgstr "В архиве"
+
+#: app_market/templates/app_market/product.html:15
+msgid "In stock"
+msgstr "В наличии"
+
+#: app_market/templates/app_market/product.html:24
+msgid "Add to cart"
+msgstr "Добавить в карзину"
+
+#: app_market/templates/app_market/product.html:29
+msgid "Not available"
+msgstr "Нет в наличии"
+
+#: app_market/templates/app_market/product.html:34
+msgid "Back to products list"
+msgstr "Вернуться к списку товаров"
+
+#: app_market/templates/app_market/products-map.html:20
+msgid "Market"
+msgstr "Магазин"
+
+#: app_market/templates/app_market/products-map.html:26
+msgid "To product"
+msgstr "К продукту"
+
+#: app_market/templates/app_market/products-map.html:32
+msgid "No information"
+msgstr "Нет информации"
+
+#: app_market/templates/app_market/sales-statistic.html:5
+msgid "Products map"
+msgstr "Карта товаров"
+
+#: app_market/templates/app_market/sales-statistic.html:16
+msgid "Sold"
+msgstr "Продано"
+
+#: app_users/models.py:9
+msgid "balance"
+msgstr "баланс"
+
+#: app_users/models.py:10
+msgid "newbie"
+msgstr "новичок"
+
+#: app_users/models.py:10
+msgid "status"
+msgstr "статус"
+
+#: app_users/models.py:11
+msgid "spenging amount"
+msgstr "сумма всех покупок"
+
+#: app_users/models.py:15
+msgid "profile"
+msgstr "профиль"
+
+#: app_users/models.py:16
+msgid "profiles"
+msgstr "профили"
+
+#: app_users/templates/users/account.html:5
+msgid "Profile"
+msgstr "Профиль"
+
+#: app_users/templates/users/account.html:10
+msgid "Welcome to the site,"
+msgstr "Добро пожаловать на сайт,"
+
+#: app_users/templates/users/account.html:11
+#: app_users/templates/users/deposit.html:11
+msgid "Your balance"
+msgstr "Ваш баланс"
+
+#: app_users/templates/users/account.html:12
+msgid "Your status"
+msgstr "Ваш статус"
+
+#: app_users/templates/users/account.html:13
+msgid "Amount of your purchases"
+msgstr "Сумма ваших покупок"
+
+#: app_users/templates/users/account.html:16
+#: app_users/templates/users/deposit.html:5
+msgid "Top up balance"
+msgstr "Пополнить баланс"
+
+#: app_users/templates/users/account.html:19
+msgid "Logout"
+msgstr "Выйти из профиля"
+
+#: app_users/templates/users/account.html:22
+#: app_users/templates/users/orders-history.html:5
+#: app_users/templates/users/orders-history.html:12
+msgid "Orders history"
+msgstr "История заказов"
+
+#: app_users/templates/users/account.html:24
+msgid "Promotions"
+msgstr "Акции"
+
+#: app_users/templates/users/account.html:31
+msgid "Offers"
+msgstr "Предложения"
+
+#: app_users/templates/users/account.html:39
+#: app_users/templates/users/deposit.html:21
+#: app_users/templates/users/orders-history.html:25
+msgid "You are not authorized on our site."
+msgstr "Вы не авторизованы на нашем сайте."
+
+#: app_users/templates/users/account.html:40
+#: app_users/templates/users/deposit.html:22
+#: app_users/templates/users/orders-history.html:26
+msgid "Enter"
+msgstr "Вход"
+
+#: app_users/templates/users/deposit.html:10
+msgid "Balance replenish"
+msgstr "Пополнение баланса"
+
+#: app_users/templates/users/deposit.html:17
+#: app_users/templates/users/register.html:13
+msgid "Sign up"
+msgstr "Подтвердить"
+
+#: app_users/templates/users/edit_account.html:5
+msgid "Change profile"
+msgstr "Изменить профиль"
+
+#: app_users/templates/users/edit_account.html:12
+msgid "Update"
+msgstr "Обновить"
+
+#: app_users/templates/users/login.html:5
+msgid "Login"
+msgstr "Войти в профиль"
+
+#: app_users/templates/users/login.html:9
+msgid "Login page"
+msgstr "Страница входа в профиль"
+
+#: app_users/templates/users/logout.html:10
+msgid "You have successfully logged out of your account!"
+msgstr "Вы успешно вышли из своего аккаунта!"
+
+#: app_users/templates/users/orders-history.html:14
+msgid "Order"
+msgstr "Заказ"
+
+#: app_users/templates/users/orders-history.html:15
+msgid "Creation date"
+msgstr "Дата создания"
+
+#: app_users/templates/users/orders-history.html:16
+msgid "Order price"
+msgstr "Сумма заказа"
+
+#: app_users/templates/users/orders-history.html:22
+msgid "Back to profile"
+msgstr "Назад к профилю"
+
+#: app_users/templates/users/register.html:5
+msgid "Registration"
+msgstr "Регистрация"
+
+#: app_users/templates/users/register.html:9
+msgid "Registraion"
+msgstr "Регистрация"
+
+#: app_users/templates/users/restore_password.html:5
+msgid "Password recovery"
+msgstr "Восстановление пароля"
+
+#: app_users/templates/users/restore_password.html:12
+msgid "Restore password"
+msgstr "Восстановить пароль"

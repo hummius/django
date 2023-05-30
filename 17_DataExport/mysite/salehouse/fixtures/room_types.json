@@ -1,0 +1,1 @@
+[{"model": "salehouse.roomtype", "pk": 1, "fields": {"type": "Квартира", "description": "Какая то квартира"}}, {"model": "salehouse.roomtype", "pk": 2, "fields": {"type": "Дом", "description": "Какой то дом"}}]

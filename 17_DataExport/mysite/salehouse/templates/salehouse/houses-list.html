@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Houses-list</title>
+</head>
+<body>
+    {% for object in houses %}
+        <p>Адресс объекта: {{ object.address }}</p>
+        <p>Тип помещения: {{ object.room_type.type }}</p>
+        <p>Кол-во комнат: {{ object.number_rooms.number }}</p>
+        <br>
+    {% endfor %}
+</body>
+</html>

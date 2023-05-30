@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Products map
+{% endblock %}
+
+{% block body %}
+    {% if objects_list %}
+        <div>
+            {% for product in products %}
+                <br>
+                ------------------------------------------
+                <p>Товар: {{ product.name }}</p>
+                <p>ID: {{ product.id }}</p>
+                <br>
+                {% for object in objects_list %}
+                    {% if object.product.id == product.id %}
+                            <div>
+                            <p>В магазине: {{ object.market.name }}</p>
+                            <p>Количество: {{ object.amount }}</p>
+                            </div>
+                    {% endif %}
+                {% endfor %}
+                <div>
+                    <a href="{% url 'app_market:product' pk=product.pk %}">К продукту</a>
+                </div>
+                ------------------------------------------
+            {% endfor %}
+        </div>
+    {% else %}
+        Нет информации
+    {% endif %}
+
+{% endblock %}

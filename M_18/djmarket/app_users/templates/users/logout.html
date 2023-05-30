@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+    Logout
+{% endblock %}
+{% block body %}
+
+    <h2>Logout</h2>
+    {% trans "You have successfully logged out of your account!" %}
+    <br>
+    <br>
+    <br>
+    <a href="{% url 'login' %}">Login</a>
+
+{% endblock %}
